@@ -53,7 +53,9 @@ Real brain MRI datasets are often small due to privacy, cost, and acquisition ch
   - Takes pre-trained fine-tuned models and generates synthetic brain MRIs, saving them to directories like `post_fine_tuning_images_{GPU}_{numImagesTrainedOn}/`.
 - **`gen_images_fine_tune_model_COLLAB.ipynb`**:
   - Uses CSVs containing the real data (248, 800, 2870 images) to fine-tune three Stable Diffusion models on an A100 GPU in Colab. Then generates three sets of synthetic data (744, 2400, 8610 images), each produced by a corresponding fine-tuned model. It is the same as the previous ipynb file except that it does not expect the fine tuned models to exist yet.
-
+ 
+- **`CV_genAI_classification.ipynb`**:
+   - Fine tunes classification NN with the synthetic MRIs and compares the accuracy of using only real and real + synthetic images. Also evaluates the quality of the fake images. Writtten by *Mindiiarova Renata*
 ## Results
 Despite the slight drop in classification accuracy when incorporating synthetic images in this study, generating fake medical images remains a promising deep learning approach for enhancing medical diagnosis. The potential to augment scarce datasets, like brain MRIs, could address data limitations, improve model robustness, and ultimately refine diagnostic precision as generation techniques advance and synthetic quality improves.
 
