@@ -57,4 +57,6 @@ Real brain MRI datasets are often small due to privacy, cost, and acquisition ch
 ## Results
 Despite the slight drop in classification accuracy when incorporating synthetic images in this study, generating fake medical images remains a promising deep learning approach for enhancing medical diagnosis. The potential to augment scarce datasets, like brain MRIs, could address data limitations, improve model robustness, and ultimately refine diagnostic precision as generation techniques advance and synthetic quality improves.
 
+Thanks to Mindiiarova Renata for the help in the classification task!
+
 ![Screenshot 2025-03-19 at 4 06 16 PM](https://github.com/user-attachments/assets/deb5dcbd-fce0-46e1-8e34-a1d1f0709f07)
