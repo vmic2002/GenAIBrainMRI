@@ -11,8 +11,8 @@ Real brain MRI datasets are often small due to privacy, cost, and acquisition ch
    - We fine-tune the pre-trained **Stable Diffusion v1-5** model (`runwayml/stable-diffusion-v1-5`) from Hugging Face on a brain MRI dataset sourced from Kaggle ([Brain MRI Images for Brain Tumor Detection](https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection)).
    - Three models are fine-tuned with varying dataset sizes: 248, 800, and 2870 images (full training set), producing synthetic MRIs at 3× the real data volume (744, 2400, 8610 images, respectively). The 800 and 2870 models leverage an A100 GPU on Colab for efficient training.
 
-2. **ResNet Fine-Tuning**:
-   - A ResNet model is fine-tuned on the combined dataset (real + synthetic MRIs) to classify brain tumors into four categories: glioma, meningioma, pituitary, and no tumor.
+2. **EfficientNet Fine-Tuning**:
+   - A EfficientNet model is fine-tuned on the combined dataset (real + synthetic MRIs) to classify brain tumors into four categories: glioma, meningioma, pituitary, and no tumor.
    - Performance is evaluated in two settings:
      - **Real Data Only**: Baseline performance on the original Kaggle dataset.
      - **Real + Synthetic Data**: Assesses whether synthetic data improves classification accuracy, robustness, or generalization.
@@ -20,7 +20,7 @@ Real brain MRI datasets are often small due to privacy, cost, and acquisition ch
 
 ## Evaluation
 
-- We evaluate ResNet performance using standard metrics (e.g., accuracy, precision, recall) on a held-out test set of real MRIs in both settings.
+- We evaluate EfficientNet performance using standard metrics (e.g., accuracy, precision, recall) on a held-out test set of real MRIs in both settings.
 - The comparison between real-only and real+synthetic results, across the three data sizes, will reveal if synthetic data enhances model performance and how much data is optimal.
 
 ## Notebooks
